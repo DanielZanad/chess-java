@@ -28,9 +28,19 @@ public class ChessMatch {
     }
 
     private void initialSetup(){
-        this.placeNewPiece('b', 6, new Rook(this.board, Color.WHITE));
-        this.placeNewPiece('e', 8, new King(this.board, Color.BLACK));
-        this.placeNewPiece('e', 1, new King(this.board, Color.WHITE));
+        this.placeNewPiece('c', 1, new Rook(board, Color.WHITE));
+        this.placeNewPiece('c', 2, new Rook(board, Color.WHITE));
+        this.placeNewPiece('d', 2, new Rook(board, Color.WHITE));
+        this.placeNewPiece('e', 2, new Rook(board, Color.WHITE));
+        this.placeNewPiece('e', 1, new Rook(board, Color.WHITE));
+        this.placeNewPiece('d', 1, new King(board, Color.WHITE));
+
+        this.placeNewPiece('c', 7, new Rook(board, Color.BLACK));
+        this.placeNewPiece('c', 8, new Rook(board, Color.BLACK));
+        this.placeNewPiece('d', 7, new Rook(board, Color.BLACK));
+        this.placeNewPiece('e', 7, new Rook(board, Color.BLACK));
+        this.placeNewPiece('e', 8, new Rook(board, Color.BLACK));
+        this.placeNewPiece('d', 8, new King(board, Color.BLACK));
     }
 
 }
